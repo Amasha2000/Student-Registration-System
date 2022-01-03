@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="registrationContext" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RegistrationDetailFormController">
+   <children>
+      <JFXButton buttonType="RAISED" layoutX="603.0" layoutY="680.0" onAction="#registerOnAction" prefHeight="78.0" prefWidth="252.0" style="-fx-background-color: #11820a;" text="Register" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font></JFXButton>
+      <AnchorPane layoutX="76.0" layoutY="158.0" prefHeight="68.0" prefWidth="379.0" style="-fx-border-width: 2; -fx-border-color: #273c75; -fx-border-radius: 8;">
+         <children>
+            <Label layoutX="27.0" layoutY="-12.0" prefHeight="23.0" prefWidth="101.0" style="-fx-background-color: #ffffff;" text="Student Id" textFill="#2131a8">
+               <font>
+                  <Font name="Calibri Bold" size="20.0" />
+               </font>
+            </Label>
+            <JFXComboBox fx:id="cmbStudentId" layoutX="22.0" layoutY="23.0" prefHeight="31.0" prefWidth="335.0" />
+         </children>
+      </AnchorPane>
+      <TableView fx:id="tblDetails" layoutX="1061.0" layoutY="234.0" prefHeight="698.0" prefWidth="814.0" stylesheets="@../assets/styles/TableStyles.css">
+         <columns>
+            <TableColumn fx:id="colProgramName" prefWidth="216.0" text="Student Id" />
+            <TableColumn fx:id="colDate" prefWidth="224.0" text="Training Program Id" />
+            <TableColumn fx:id="colTime" prefWidth="373.0" text="Registration Date" />
+         </columns>
+      </TableView>
+      <Label alignment="CENTER" prefHeight="85.0" prefWidth="1920.0" style="-fx-background-color: #13076e;" text="View And Manage Registration Details" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Label>
+      <Separator layoutX="22.0" layoutY="38.0" prefHeight="6.0" prefWidth="621.0" />
+      <Separator layoutX="1274.0" layoutY="41.0" prefHeight="6.0" prefWidth="537.0" />
+      <AnchorPane layoutX="539.0" layoutY="158.0" prefHeight="68.0" prefWidth="379.0" style="-fx-border-width: 2; -fx-border-color: #273c75; -fx-border-radius: 8;">
+         <children>
+            <Label layoutX="27.0" layoutY="-12.0" prefHeight="23.0" prefWidth="90.0" style="-fx-background-color: #ffffff;" text="Course Id" textFill="#2131a8">
+               <font>
+                  <Font name="Calibri Bold" size="20.0" />
+               </font>
+            </Label>
+            <JFXComboBox fx:id="cmbCourseId" layoutX="22.0" layoutY="23.0" prefHeight="31.0" prefWidth="335.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="76.0" layoutY="394.0" prefHeight="68.0" prefWidth="379.0" style="-fx-border-width: 2; -fx-border-color: #273c75; -fx-border-radius: 8;">
+         <children>
+            <Label layoutX="27.0" layoutY="-12.0" prefHeight="23.0" prefWidth="74.0" style="-fx-background-color: #ffffff;" text="Address" textFill="#2131a8">
+               <font>
+                  <Font name="Calibri Bold" size="20.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="txtAddress" layoutX="20.0" layoutY="16.0" prefHeight="42.0" prefWidth="345.0">
+               <font>
+                  <Font size="20.0" />
+               </font></JFXTextField>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="76.0" layoutY="506.0" prefHeight="68.0" prefWidth="379.0" style="-fx-border-width: 2; -fx-border-color: #273c75; -fx-border-radius: 8;">
+         <children>
+            <Label layoutX="27.0" layoutY="-12.0" prefHeight="23.0" prefWidth="131.0" style="-fx-background-color: #ffffff;" text="Phone Number" textFill="#2131a8">
+               <font>
+                  <Font name="Calibri Bold" size="20.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="txtPhoneNumber" layoutX="20.0" layoutY="16.0" prefHeight="42.0" prefWidth="345.0">
+               <font>
+                  <Font size="20.0" />
+               </font></JFXTextField>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="76.0" layoutY="613.0" prefHeight="68.0" prefWidth="379.0" style="-fx-border-width: 2; -fx-border-color: #273c75; -fx-border-radius: 8;">
+         <children>
+            <Label layoutX="27.0" layoutY="-12.0" prefHeight="23.0" prefWidth="39.0" style="-fx-background-color: #ffffff;" text="NIC" textFill="#2131a8">
+               <font>
+                  <Font name="Calibri Bold" size="20.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="txtNIC" layoutX="20.0" layoutY="16.0" prefHeight="42.0" prefWidth="345.0">
+               <font>
+                  <Font size="20.0" />
+               </font></JFXTextField>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="76.0" layoutY="719.0" prefHeight="68.0" prefWidth="379.0" style="-fx-border-width: 2; -fx-border-color: #273c75; -fx-border-radius: 8;">
+         <children>
+            <Label layoutX="27.0" layoutY="-12.0" prefHeight="23.0" prefWidth="139.0" style="-fx-background-color: #ffffff;" text="Guardian Name" textFill="#2131a8">
+               <font>
+                  <Font name="Calibri Bold" size="20.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="txtGuardianName" layoutX="20.0" layoutY="16.0" prefHeight="42.0" prefWidth="345.0">
+               <font>
+                  <Font size="20.0" />
+               </font></JFXTextField>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="76.0" layoutY="829.0" prefHeight="68.0" prefWidth="379.0" style="-fx-border-width: 2; -fx-border-color: #273c75; -fx-border-radius: 8;">
+         <children>
+            <Label layoutX="27.0" layoutY="-12.0" prefHeight="23.0" prefWidth="69.0" style="-fx-background-color: #ffffff;" text="Gender" textFill="#2131a8">
+               <font>
+                  <Font name="Calibri Bold" size="20.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="txtGender" layoutX="20.0" layoutY="16.0" prefHeight="42.0" prefWidth="345.0">
+               <font>
+                  <Font size="20.0" />
+               </font></JFXTextField>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="539.0" layoutY="401.0" prefHeight="68.0" prefWidth="379.0" style="-fx-border-width: 2; -fx-border-color: #273c75; -fx-border-radius: 8;">
+         <children>
+            <Label layoutX="27.0" layoutY="-12.0" prefHeight="23.0" prefWidth="90.0" style="-fx-background-color: #ffffff;" text="Duration" textFill="#2131a8">
+               <font>
+                  <Font name="Calibri Bold" size="20.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="txtDuration" layoutX="20.0" layoutY="16.0" prefHeight="42.0" prefWidth="345.0">
+               <font>
+                  <Font size="20.0" />
+               </font></JFXTextField>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="539.0" layoutY="282.0" prefHeight="68.0" prefWidth="379.0" style="-fx-border-width: 2; -fx-border-color: #273c75; -fx-border-radius: 8;">
+         <children>
+            <Label layoutX="27.0" layoutY="-12.0" prefHeight="23.0" prefWidth="121.0" style="-fx-background-color: #ffffff;" text="Course Name" textFill="#2131a8">
+               <font>
+                  <Font name="Calibri Bold" size="20.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="txtCourseName" layoutX="20.0" layoutY="16.0" prefHeight="42.0" prefWidth="345.0">
+               <font>
+                  <Font size="20.0" />
+               </font></JFXTextField>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="539.0" layoutY="506.0" prefHeight="68.0" prefWidth="379.0" style="-fx-border-width: 2; -fx-border-color: #273c75; -fx-border-radius: 8;">
+         <children>
+            <Label layoutX="27.0" layoutY="-12.0" prefHeight="23.0" prefWidth="39.0" style="-fx-background-color: #ffffff;" text="Fee" textFill="#2131a8">
+               <font>
+                  <Font name="Calibri Bold" size="20.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="txtFee" layoutX="20.0" layoutY="16.0" prefHeight="42.0" prefWidth="345.0">
+               <font>
+                  <Font size="20.0" />
+               </font></JFXTextField>
+         </children>
+      </AnchorPane>
+      <Label alignment="CENTER" layoutY="962.0" prefHeight="118.0" prefWidth="1920.0" style="-fx-background-color: #0856ae;" textFill="#0956ae">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTime" layoutX="31.0" layoutY="981.0" prefHeight="52.0" prefWidth="719.0" text="Label" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font></Label>
+      <Label fx:id="lblDate" layoutX="1287.0" layoutY="982.0" prefHeight="42.0" prefWidth="550.0" text="Label" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font></Label>
+      <ImageView fitHeight="92.0" fitWidth="108.0" layoutX="1745.0" layoutY="112.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/online-registration.png" />
+         </image>
+      </ImageView>
+      <FontAwesomeIcon fill="WHITE" glyphName="HOME" layoutX="1830.0" layoutY="68.0" onMouseClicked="#openHome" size="4em" wrappingWidth="44.85714340209961">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></FontAwesomeIcon>
+      <AnchorPane layoutX="76.0" layoutY="282.0" prefHeight="68.0" prefWidth="379.0" style="-fx-border-width: 2; -fx-border-color: #273c75; -fx-border-radius: 8;">
+         <children>
+            <Label layoutX="27.0" layoutY="-12.0" prefHeight="23.0" prefWidth="60.0" style="-fx-background-color: #ffffff;" text="Name" textFill="#2131a8">
+               <font>
+                  <Font name="Calibri Bold" size="20.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="txtName" layoutX="20.0" layoutY="16.0" prefHeight="42.0" prefWidth="345.0">
+               <font>
+                  <Font size="20.0" />
+               </font></JFXTextField>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

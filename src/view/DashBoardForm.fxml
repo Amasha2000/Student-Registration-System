@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="dashBoardContext" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: #010157;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashBoardFormController">
+   <children>
+      <Label alignment="CENTER" layoutY="-2.0" prefHeight="98.0" prefWidth="1920.0" style="-fx-background-color: #2488c2;" text="Dash Board" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Label>
+      <Separator layoutX="7.0" layoutY="47.0" prefHeight="4.0" prefWidth="841.0" />
+      <Separator layoutX="1058.0" layoutY="47.0" prefHeight="4.0" prefWidth="720.0" />
+      <FontAwesomeIcon fill="WHITE" glyphName="HOME" layoutX="1814.0" layoutY="69.0" onMouseClicked="#openHome" size="4em" wrappingWidth="44.85714340209961">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </FontAwesomeIcon>
+      <AnchorPane layoutX="200.0" layoutY="263.0" prefHeight="658.0" prefWidth="1520.0" style="-fx-background-color: white; -fx-background-radius: 30px;">
+         <children>
+            <ImageView fx:id="imgStudents" fitHeight="239.0" fitWidth="237.0" layoutX="183.0" layoutY="133.0" onMouseClicked="#navigateStudents" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/students.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="imgRegistration" fitHeight="229.0" fitWidth="237.0" layoutX="642.0" layoutY="151.0" onMouseClicked="#navigateDetails" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/online-registration.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="imgCourses" fitHeight="229.0" fitWidth="237.0" layoutX="1145.0" layoutY="151.0" onMouseClicked="#navigatePrograms" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/online-course.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Label layoutX="200.0" layoutY="446.0" prefHeight="31.0" prefWidth="204.0" text="Register Students">
+               <font>
+                  <Font name="Bell MT Bold" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="539.0" layoutY="446.0" prefHeight="31.0" prefWidth="414.0" text="View &amp; Manage Registration Details">
+               <font>
+                  <Font name="Bell MT Bold" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="1127.0" layoutY="446.0" prefHeight="31.0" prefWidth="312.0" text="Manage Training Programs">
+               <font>
+                  <Font name="Bell MT Bold" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

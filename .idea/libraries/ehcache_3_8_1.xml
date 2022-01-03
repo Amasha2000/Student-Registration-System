@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="ehcache-3.8.1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/Cache jar/ehcache-3.8.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/Cache jar/hibernate-ehcache-5.3.6.Final.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
