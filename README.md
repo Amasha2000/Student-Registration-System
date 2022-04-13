@@ -32,4 +32,3 @@ View and Manage Registration Details<hr>
 
 Manage Training Programs<hr>
 ![Screenshot (87)](https://user-images.githubusercontent.com/90234105/153490246-20823f8e-da06-4952-9eae-8946d0c217a4.png)
-
